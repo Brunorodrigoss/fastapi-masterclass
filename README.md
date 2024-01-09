@@ -8,7 +8,7 @@ Setup:
    Install fastapi: pip3 install fastapi
    Install fasapi server: pip3 install uvicorn    
 
-Start fastapi server: 
+Start fastapi server: uvicorn main:app --reload
 
 Swagger: http://localhost:8000/docs
 Redoc: http://localhost:8000/redoc
