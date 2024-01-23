@@ -1,5 +1,5 @@
 from typing import List, Optional
-from fastapi import APIRouter, Cookie, Depends, Response, status, Header
+from fastapi import APIRouter, Cookie, Depends, Form, Response, status, Header
 from fastapi.responses import HTMLResponse, PlainTextResponse
 
 
@@ -9,6 +9,12 @@ router = APIRouter(
 )
 
 products = ['watch', 'camera', 'phone']
+
+@router.post('/new')
+def create_product(name: str = Form(...)):
+    products.append(name)
+
+    return products
 
 @router.get('/all')
 def get_all_products():
