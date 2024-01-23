@@ -12,3 +12,5 @@ Start fastapi server: uvicorn main:app --reload
 
 Swagger: http://localhost:8000/docs
 Redoc: http://localhost:8000/redoc
+
+Use this repository to face the CORS error message: https://github.com/Brunorodrigoss/app-practice
