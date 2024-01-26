@@ -1,4 +1,5 @@
-from fastapi import APIRouter, File
+from fastapi import APIRouter, File, UploadFile
+import shutil
 
 router = APIRouter(
     prefix='/file',
@@ -11,3 +12,15 @@ def get_file(file: bytes = File(...)):
     lines = content.split('\n')
 
     return { 'lines': lines }
+
+@router.post('/uploadfile')
+def get_uploadfile(uploadfile: UploadFile = File(...)):
+    path = f"files/{uploadfile.filename}"
+
+    with open(path, 'w+b') as buffer:
+        shutil.copyfileobj(uploadfile.file, buffer)
+        
+    return {
+        'filename': path,
+        'type': uploadfile.content_type
+    }
