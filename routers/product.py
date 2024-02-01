@@ -1,7 +1,7 @@
 from typing import List, Optional
 from fastapi import APIRouter, Cookie, Depends, Form, Response, status, Header
 from fastapi.responses import HTMLResponse, PlainTextResponse
-
+from custom_log import log
 
 router = APIRouter(
     prefix='/product',
@@ -22,6 +22,11 @@ def get_all_products():
     data = " ".join(products)
     response = Response(content=data, media_type="text/plain")
     response.set_cookie(key="test_cookie", value="test_cookie_value")
+
+    log(
+        tag="MyAPI",
+        message="Call to get all products"
+    )
 
     return response
 
