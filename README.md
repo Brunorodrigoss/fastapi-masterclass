@@ -16,3 +16,5 @@ Redoc: http://localhost:8000/redoc
 Use this repository to face the CORS error message: https://github.com/Brunorodrigoss/app-practice
 
 To generate a Rando Secret key, you can use it: openssl rand -hex 32
+
+https://htmledit.squarefree.com/
