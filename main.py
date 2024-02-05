@@ -8,6 +8,7 @@ from db import models
 from db.database import engine
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
+import time
 
 app = FastAPI()
 app.include_router(templates.router)
@@ -35,6 +36,16 @@ def story_exception_handler(request: Request, exc: StoryException):
 #     return PlainTextResponse(str(exc), status_code=400)
 
 models.Base.metadata.create_all(engine)
+
+@app.middleware("http")
+async def add_middleware(request: Request, call_next):
+    start_time = time.time()
+
+    response = await call_next(request)
+    duration = time.time() - start_time
+    response.headers['duration'] = str(duration)
+
+    return response
 
 origins = [
     'http://localhost:3000'
