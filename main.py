@@ -51,7 +51,7 @@ async def websocket_endpoint(websocket: WebSocket):
     while(True):
         data = await websocket.receive_text()
         for client in clients:
-            await client.send_text(f'[{client}] {data}')
+            await client.send_text(f'{data}')
 
 models.Base.metadata.create_all(engine)
 
