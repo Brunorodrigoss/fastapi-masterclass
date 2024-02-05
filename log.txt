@@ -1,3 +1,4 @@
 [2024-02-01 08:32:31.353250] MyAPI: Call to get all products
 [2024-02-01 08:34:03.201945] MyAPI: Call to get all products
 [2024-02-01 08:34:09.651874] MyAPI: Call to get all products
+[2024-02-05 08:21:46.908018] MyAPI: Template read for product with id 7
