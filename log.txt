@@ -2,3 +2,4 @@
 [2024-02-01 08:34:03.201945] MyAPI: Call to get all products
 [2024-02-01 08:34:09.651874] MyAPI: Call to get all products
 [2024-02-05 08:21:46.908018] MyAPI: Template read for product with id 7
+[2024-02-07 08:22:50.084754] MyApp: message here 	http://localhost:8000/dependencies?separator=---&tag=MyApp&message=message%20here 
