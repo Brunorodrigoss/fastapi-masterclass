@@ -21,3 +21,5 @@ https://htmledit.squarefree.com/
 
 Complementary projects:
 - https://github.com/Brunorodrigoss/optical-character-recognition-ocr
+
+- https://github.com/Brunorodrigoss/blog-site-fastapi
