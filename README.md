@@ -20,6 +20,8 @@ To generate a Rando Secret key, you can use it: openssl rand -hex 32
 https://htmledit.squarefree.com/
 
 Complementary projects:
-- https://github.com/Brunorodrigoss/optical-character-recognition-ocr
+- [Optical Character Recognition](https://github.com/Brunorodrigoss/optical-character-recognition-ocr)
 
-- https://github.com/Brunorodrigoss/blog-site-fastapi
+- [Blog Fastapi](https://github.com/Brunorodrigoss/blog-site-fastapi)
+
+- [Blog React](https://github.com/Brunorodrigoss/blog-site-react)
