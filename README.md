@@ -21,9 +21,7 @@ https://htmledit.squarefree.com/
 
 Complementary projects:
 - [Optical Character Recognition](https://github.com/Brunorodrigoss/optical-character-recognition-ocr)
-
 - [Blog Fastapi](https://github.com/Brunorodrigoss/blog-site-fastapi)
-
 - [Blog React](https://github.com/Brunorodrigoss/blog-site-react)
-
 - [Instagram - Clone Fastapi](https://github.com/Brunorodrigoss/instagram-clone-fastapi)
+- [Instagram - Clone React](https://github.com/Brunorodrigoss/instagram-clone-react)
