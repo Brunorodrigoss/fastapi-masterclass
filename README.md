@@ -25,3 +25,5 @@ Complementary projects:
 - [Blog Fastapi](https://github.com/Brunorodrigoss/blog-site-fastapi)
 
 - [Blog React](https://github.com/Brunorodrigoss/blog-site-react)
+
+- [Instagram - Clone Fastapi](https://github.com/Brunorodrigoss/instagram-clone-fastapi)
